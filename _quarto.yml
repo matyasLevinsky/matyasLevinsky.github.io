@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Matyas Levinsky"
+  back-to-top-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Home"
+      - href: about.qmd
+        text: "About Me"
+      - text: "Projects"  
+        menu: 
+          - SlerkaProjekt.qmd
+            
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
