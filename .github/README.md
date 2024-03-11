@@ -1,2 +1,5 @@
 # matyasLevinsky.github.io
-Website attempt
+
+This is my personal website made using [Quarto](https://quarto.org/).
+
+It's a work in progress.

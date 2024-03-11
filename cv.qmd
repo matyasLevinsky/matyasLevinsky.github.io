@@ -1,0 +1,81 @@
+---
+title: "Curriculum Vitae"
+---
+
+E-mail: levinsky.matyas\@gmail.com <br>
+Tel.: +420 602 404 381 <br>
+Tel.: +49 159 0138 2848 <br>
+Website: https://matyaslevinsky.github.io/
+
+## EDUCATION
+
+##### **Bachelor of Sociology --- Sociology**
+
+###### *Charles University* \| Aug 2020 --- Present
+
+-   Specializing in the study of work precarization and its impact on young adults in the gig and digital economies, demonstrating a deep understanding of contemporary labor issues and trends.
+-   Participating in seminars and workshops on digital transformation and its impact on labor markets, in an attempt at understanding recent and predicting future societal changes.
+-   Engaging in interdisciplinary coursework that combines sociology, economics, labor studies, and politology.
+
+##### **Bachelor of Architecture --- Urbanism**
+
+###### *Technical University Berlin* \| Aug 2017 --- Oct 2019
+
+-   Engaged in multidisciplinary projects involving urban planning and sustainable design, honing collaboration, and project management skills, emphasizing the ability to work effectively in team settings.
+-   Utilized advanced software and technology for architectural design and urban planning, such as ARCHICAD21, Revit, and GIS.
+
+##### **High School Diploma**
+
+###### *DSP* \| *German School Prague* \| Aug 2013 --- Oct 2017
+
+-   Finished with an Average of 1.4. *(German grading system)*
+
+## WORK EXPERIENCE
+
+##### **PAQ Research**\*
+
+###### *Data analyst* \| Jan 2022 -- Present
+
+Data analysis and topical research. Mainly data analysis and cleaning using R, with occasional Python for interactive web applications. Questionnaire design, coding and testing. Topical research of both academic and governmental sources. Key results:
+
+-   Research for *"Hlas Ukrajinců"* [(*Voice of Ukrainians*)](https://www.paqresearch.cz/post/voice-of-ukrainians-education-housing-employment-poverty-mental-health/) an project mapping the integration of the incoming refugees from Ukraine in the Czech Republic.
+-   Research and Questionnaire design for *"Praha 1 očima občanů"* [(*Prague 1 through the eyes of its citizens*)](https://www.paqresearch.cz/post/praha1/) a comparative study on the effects of over-tourism in Prague 1 on the quality of life for it's inhabitants.
+-   Data finding, cleaning and wrangling to put into the internal database of PAQ, and publishing a select subset on [DataPAQ](https://www.datapaq.cz/).
+
+##### **Inbaze**
+
+###### *External German Lecturer* Oct 2020 -- Present
+
+Participation in the Project *"Bedýnky příběhů"* [*Storyboxes*](https://inbaze.cz/produkt/bedynka-pribehu-z-nemecka/) a program aimed to increase the children's familiarity and understanding of foregin languages and cultures. The program is aimed at children from 6 to 10 years old, and is based on the idea of a "story-box" - a box filled with items and stories that are related to a country, and are used to engage the children with the given culture.
+
+##### **Freelance Translator**
+
+###### *Translator* 2016 -- Present
+
+##### **Embassy of the Czech Republic in Berlin**
+
+###### *Translator* 2018
+
+-   Translated various theater pieces from Czech to German. - Cooperated with Mrs. Barbora Schnelle in their dramatization as a part of the Czech Culture festival *“Ein Stück: Tschechien”* [One Piece: Czechia](https://www.drama-panorama.com/en/event/ein-stuck-tschechien-new-czech-drama-2018/).
+
+## SKILLS
+
+**Languages**
+
+German: Native, Czech: Native, English: C2, French: B1
+
+**Programming**
+
+R: Experienced, Python: Intermediate
+
+**Design Software**
+
+ARCHICAD21, Revit, GIS, Blender3D, Rhino
+
+**Other Software**
+
+Photoshop, InDesign, Inkscape, LaTex, Microsoft Office
+
+## REFERENCES
+
+Available upon request

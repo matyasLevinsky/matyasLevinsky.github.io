@@ -13,21 +13,26 @@ about:
       href: https://github.com/matyasLevinsky
 ---
 
-Hello, I am Matyáš Levínský a sociology student at the philosophical faculty of the Charles University in Prague. I am primarily interested in the precarization of work due to the Gig economy, and AI. I try to follow hot topics, and as such am interested in AI itself. 
+Hello, I am Matyáš Levínský a sociology student at the philosophical faculty of the Charles University in Prague. I am primarily interested in the precarization of work due to the Gig economy, and AI. I try to follow hot topics, and as such am interested in AI itself.
 
-## Education
+## Overview
+
+### Education
 
 **Charles University, Prague, Czech Republic**
 
-Sociology | *Sept 2021 - present*
+Sociology \| *Sept 2021 - present*
 
 **Technical University Berlin, Berlin, Germany**
 
-Bc. Architecture | *Sept 2019 - June 2021*
+Bc. Architecture \| *Sept 2019 - June 2021*
 
-## Experience
+### Experience
 
-[PAQ Research](https://www.paqresearch.cz/) | Data Analyst | *September 2022 - present*
+[PAQ Research](https://www.paqresearch.cz/) \| Data Analyst \| *September 2022 - present*
 
-[Inbaze](https://inbaze.cz/en/) | External: German Lecturer | *October 2021 - present*
+[Inbaze](https://inbaze.cz/en/) \| External: German Lecturer \| *October 2021 - present*
 
+## Curriculum Vitae
+
+[Here](cv.qmd) you may find my entire Curriculum Vitae.

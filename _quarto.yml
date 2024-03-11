@@ -10,15 +10,19 @@ website:
         text: "Home"
       - href: about.qmd
         text: "About Me"
+      - href: cv.qmd
+        text: "Curriculum Vitae"
       - text: "Projects"  
         menu: 
           - SlerkaProjekt.qmd
             
 format:
   html:
-    theme: cosmo
+    theme: 
+      dark: [cosmo, theme-dark.scss]
+      light: cosmo
     css: styles.css
     toc: true
-
+    toc-expand: true
 editor: visual
 
