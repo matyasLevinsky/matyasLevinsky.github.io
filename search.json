@@ -131,5 +131,61 @@
     "title": "Analyzing the CNN coverage of the Prague University shooting",
     "section": "Expanding on that analysis: Latent Dirichlet allocation",
     "text": "Expanding on that analysis: Latent Dirichlet allocation\nLatent Dirichlet allocation (LDA) is a particularly popular method for fitting a topic model. It treats each document as a mixture of topics, and each topic as a mixture of words. We will use it to give some oomph to our analysis. For that we will be using the package topicmodels. We will also have to adapt the shape of our data:\n\nlibrary(topicmodels)\n\nremoveWords &lt;- c(\"cnn\", \"p.m\")\ntoRemoveDf &lt;- tibble(document = NA, word = removeWords, n = 1)\n\n# Dataformatting\n# Need one-term-per-document-per-row\n\nDtmData &lt;- reducedTb %&gt;% \n  group_by(name, headline) %&gt;% \n  count(word, sort = T) %&gt;% \n  ungroup() %&gt;% \n  mutate(document = paste0(name, \"_\", headline)) %&gt;% \n  select(document, word, n) %&gt;% \n  anti_join(toRemoveDf, by = \"word\")\n\nhead(DtmData, 5)\n\n\n\n  \n\n\n\nNow that our data is in an appropriate format we can start modeling. As we know that there are 12 Events we have scraped from the Web we can input that for gaining an optimal model. (I have attempted other values, the results were less than stellar.)\n\ncastData &lt;- cast_tdm(data = DtmData, term = document, document = word, value = n) # reverse necessary\n\ncastData\n\n&lt;&lt;TermDocumentMatrix (terms: 432, documents: 3991)&gt;&gt;\nNon-/sparse entries: 20266/1703846\nSparsity           : 99%\nMaximal term length: 180\nWeighting          : term frequency (tf)\n\nmodel1 &lt;- LDA(castData, k = 12, control = list(seed = 1234)) # reverses, see above\n  \nmodel1\n\nA LDA_VEM topic model with 12 topics.\n\nmodel1Topics &lt;- tidytext::tidy(model1, matrix = \"beta\")\n\nmodel1Topics\n\n\n\n  \n\n\n\nYou might have noticed the issue with the reverse naming of document and word. For some reason there happens a switch in the LDA() step, that I was unable to diagnose, so this is my shoddy workaround. Now that we have the model we can look how certain terms are present in the models 12 topics. Remember that the topics were set by the model itself and not by us. Therefor we can evaluate if the topic are sensible to our human preferences.\n\nshootingTopTerms &lt;- model1Topics %&gt;%\n  group_by(topic) %&gt;%\n  slice_max(beta, n = 10) %&gt;% \n  ungroup() %&gt;%\n  arrange(topic, -beta)\n\nshootingTopTerms %&gt;%\n  mutate(term = reorder_within(term, beta, topic)) %&gt;%\n  ggplot(aes(beta, term, fill = factor(topic))) +\n  geom_col(show.legend = FALSE) +\n  facet_wrap(~ topic, scales = \"free\") +\n  scale_y_reordered()\n\n\n\n\nWe are mostly interested in plot nr. 11 that is showing the language used during the reporting on the Prague mass shooting. To my sensibilities the graph make sense and so I will continue with the analysis. To determine whether the Prague shooting was a routing reporting experience for the writers at CNN we can look whether the articles themselves are significantly different. For that purpose we will separate the individual articles from their Events and look how many the model can correctly allocate to the correct topic.\n\nmodel1Gamma &lt;- tidytext::tidy(model1, matrix = \"gamma\")\n\nmodel1Gamma\n\n\n\n  \n\n\nseparatedGamma &lt;- model1Gamma %&gt;%\n  separate(document, c(\"Event\", \"Headline\"), sep = \"_\", convert = TRUE)\n\nseparatedGamma\n\n\n\n  \n\n\nseparatedGamma %&gt;%\n  mutate(title = reorder(Event, gamma * topic)) %&gt;%\n  ggplot(aes(factor(topic), gamma)) +\n  geom_boxplot() +\n  facet_wrap(~ Event) +\n  labs(x = \"topic\", y = expression(gamma))\n\n\n\n\nLooking at the graph we can clearly see that there are 3 Events with significantly lower mis-attribution of articles/headlines they are: The Farmington New Mexico shooting, the judgment against Jennifer Crumbley and the Prague university shooting."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "E-mail: levinsky.matyas@gmail.com  Tel.: +420 602 404 381  Tel.: +49 159 0138 2848  Website: https://matyaslevinsky.github.io/"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": "EDUCATION",
+    "text": "EDUCATION\n\nBachelor of Sociology — Sociology\n\nCharles University | Aug 2020 — Present\n\nSpecializing in the study of work precarization and its impact on young adults in the gig and digital economies, demonstrating a deep understanding of contemporary labor issues and trends.\nParticipating in seminars and workshops on digital transformation and its impact on labor markets, in an attempt at understanding recent and predicting future societal changes.\nEngaging in interdisciplinary coursework that combines sociology, economics, labor studies, and politology.\n\n\n\n\nBachelor of Architecture — Urbanism\n\nTechnical University Berlin | Aug 2017 — Oct 2019\n\nEngaged in multidisciplinary projects involving urban planning and sustainable design, honing collaboration, and project management skills, emphasizing the ability to work effectively in team settings.\nUtilized advanced software and technology for architectural design and urban planning, such as ARCHICAD21, Revit, and GIS.\n\n\n\n\nHigh School Diploma\n\nDSP | German School Prague | Aug 2013 — Oct 2017\n\nFinished with an Average of 1.4. (German grading system)"
+  },
+  {
+    "objectID": "cv.html#work-experience",
+    "href": "cv.html#work-experience",
+    "title": "Curriculum Vitae",
+    "section": "WORK EXPERIENCE",
+    "text": "WORK EXPERIENCE\n\nPAQ Research*\n\nData analyst | Jan 2022 – Present\nData analysis and topical research. Mainly data analysis and cleaning using R, with occasional Python for interactive web applications. Questionnaire design, coding and testing. Topical research of both academic and governmental sources. Key results:\n\nResearch for “Hlas Ukrajinců” (Voice of Ukrainians) an project mapping the integration of the incoming refugees from Ukraine in the Czech Republic.\nResearch and Questionnaire design for “Praha 1 očima občanů” (Prague 1 through the eyes of its citizens) a comparative study on the effects of over-tourism in Prague 1 on the quality of life for it’s inhabitants.\nData finding, cleaning and wrangling to put into the internal database of PAQ, and publishing a select subset on DataPAQ.\n\n\n\n\nInbaze\n\nExternal German Lecturer Oct 2020 – Present\nParticipation in the Project “Bedýnky příběhů” Storyboxes a program aimed to increase the children’s familiarity and understanding of foregin languages and cultures. The program is aimed at children from 6 to 10 years old, and is based on the idea of a “story-box” - a box filled with items and stories that are related to a country, and are used to engage the children with the given culture.\n\n\n\nFreelance Translator\n\nTranslator 2016 – Present\n\n\n\nEmbassy of the Czech Republic in Berlin\n\nTranslator 2018\n\nTranslated various theater pieces from Czech to German. - Cooperated with Mrs. Barbora Schnelle in their dramatization as a part of the Czech Culture festival “Ein Stück: Tschechien” One Piece: Czechia."
+  },
+  {
+    "objectID": "cv.html#references",
+    "href": "cv.html#references",
+    "title": "Curriculum Vitae",
+    "section": "REFERENCES",
+    "text": "REFERENCES\nAvailable upon request"
+  },
+  {
+    "objectID": "about.html#overview",
+    "href": "about.html#overview",
+    "title": "About Me",
+    "section": "Overview",
+    "text": "Overview\n\nEducation\nCharles University, Prague, Czech Republic\nSociology | Sept 2021 - present\nTechnical University Berlin, Berlin, Germany\nBc. Architecture | Sept 2019 - June 2021\n\n\nExperience\nPAQ Research | Data Analyst | September 2022 - present\nInbaze | External: German Lecturer | October 2021 - present"
+  },
+  {
+    "objectID": "about.html#curriculum-vitae",
+    "href": "about.html#curriculum-vitae",
+    "title": "About Me",
+    "section": "Curriculum Vitae",
+    "text": "Curriculum Vitae\nHere you may find my entire Curriculum Vitae."
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "Curriculum Vitae",
+    "section": "SKILLS",
+    "text": "SKILLS\nLanguages\nGerman: Native, Czech: Native, English: C2, French: B1\nProgramming\nR: Experienced, Python: Intermediate\nDesign Software\nARCHICAD21, Revit, GIS, Blender3D, Rhino\nOther Software\nPhotoshop, InDesign, Inkscape, LaTex, Microsoft Office"
+  },
+  {
+    "objectID": "cv.html#section",
+    "href": "cv.html#section",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Embassy of the Czech Republic in Berlin\n\nTranslator 2018\n\nTranslated various theater pieces from Czech to German. - Cooperated with Mrs. Barbora Schnelle in their dramatization as a part of the Czech Culture festival “Ein Stück: Tschechien” One Piece: Czechia."
   }
 ]
