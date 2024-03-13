@@ -1,11 +1,35 @@
 ---
 title: "Curriculum Vitae"
+format: 
+  html:
+    toc: true
+  pdf:
+    latex-auto-install: True
+    code-line-numbers: True
+    include-in-header:  
+        - text: |
+            \usepackage{fontawesome5}
+format-links: [pdf]
 ---
 
-E-mail: levinsky.matyas\@gmail.com <br>
-Tel.: +420 602 404 381 <br>
-Tel.: +49 159 0138 2848 <br>
-Website: https://matyaslevinsky.github.io/
+::: {.content-visible when-format="pdf"}
+::: {layout="[[60, 40]]"}
+<div>
+\begin{flushleft}
+   \newline
+\faEnvelope  levinsky.matyas@gmail.com 
+\newline \newline 
+\faPhone  +420 602 404 381 
+\newline \newline 
+\faPhone  +49 159 0138 2848 
+\newline \newline 
+\faLink  https://matyaslevinsky.github.io/
+\end{flushleft}
+</div>
+
+![](GoodFotoMini.jpg){fig-align="right" width="220"}
+:::
+:::
 
 ## EDUCATION
 
@@ -32,7 +56,7 @@ Website: https://matyaslevinsky.github.io/
 
 ## WORK EXPERIENCE
 
-##### **PAQ Research**\*
+##### **PAQ Research**
 
 ###### *Data analyst* \| Jan 2022 -- Present
 
@@ -44,17 +68,17 @@ Data analysis and topical research. Mainly data analysis and cleaning using R, w
 
 ##### **Inbaze**
 
-###### *External German Lecturer* Oct 2020 -- Present
+###### *External German Lecturer* \| Oct 2020 -- Present
 
 Participation in the Project *"Bedýnky příběhů"* [*Storyboxes*](https://inbaze.cz/produkt/bedynka-pribehu-z-nemecka/) a program aimed to increase the children's familiarity and understanding of foregin languages and cultures. The program is aimed at children from 6 to 10 years old, and is based on the idea of a "story-box" - a box filled with items and stories that are related to a country, and are used to engage the children with the given culture.
 
 ##### **Freelance Translator**
 
-###### *Translator* 2016 -- Present
+###### *Translator* \| 2016 -- Present
 
 ##### **Embassy of the Czech Republic in Berlin**
 
-###### *Translator* 2018
+###### *Translator* \| 2018
 
 -   Translated various theater pieces from Czech to German. - Cooperated with Mrs. Barbora Schnelle in their dramatization as a part of the Czech Culture festival *“Ein Stück: Tschechien”* [One Piece: Czechia](https://www.drama-panorama.com/en/event/ein-stuck-tschechien-new-czech-drama-2018/).
 
