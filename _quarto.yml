@@ -4,25 +4,41 @@ project:
 website:
   title: "Matyas Levinsky"
   back-to-top-navigation: true
+  repo-url: https://github.com/matyasLevinsky/matyaslevinsky.github.io
+  repo-subdir: "_site"
+  repo-actions: [edit, source]
+  
   navbar:
     left:
       - href: index.qmd
         text: "Home"
-      - href: about.qmd
-        text: "About Me"
-      - href: cv.qmd
-        text: "Curriculum Vitae"
-      - text: "Projects"  
+      - text: "About Me"
+        menu:
+          - href: about.qmd
+            text: "About Me"
+          - href: cv.qmd
+            text: "Curriculum Vitae"
+      - text: "Data Projects"  
         menu: 
           - SlerkaProjekt.qmd
+      - text: "Research Projects"
+        menu:
+          - text: "Work in progress"
+      - text: "Guides"
+        menu:
+          - text: "Work in progress"
             
 format:
   html:
     theme: 
       dark: [cosmo, theme-dark.scss]
       light: cosmo
-    css: styles.css
     toc: true
     toc-expand: true
-editor: visual
+    df-print: paged
+    fig-width: 9
+    fig-height: 6
+
+execute:
+  freeze: auto
 
