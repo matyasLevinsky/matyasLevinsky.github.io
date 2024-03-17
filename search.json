@@ -4,7 +4,7 @@
     "href": "SlerkaProjekt.html",
     "title": "Analyzing the CNN coverage of the Prague University shooting",
     "section": "",
-    "text": "Given that the University shooting that happened on the 21 December 2023 was unprecedented in Czech history, I wondered whether it would be reflected as such in american media that has grown increasingly desensitized to news of mass shootings."
+    "text": "Sensitive content\n\n\n\nThis Article, while only analyzing the reporting about a mass shooting will still contain some references about it. Read with caution if you are sensitive to that.\nGiven that the University shooting that happened on the 21 December 2023 was unprecedented in Czech history, I wondered whether it would be reflected as such in american media that has grown increasingly desensitized to news of mass shootings."
   },
   {
     "objectID": "SlerkaProjekt.html#getting-the-data",
@@ -81,34 +81,20 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Hello, I am Matyáš Levínský a sociology student at the philosophical faculty of the Charles University in Prague. I am primarily interested in the precarization of work due to the Gig economy, and AI. I try to follow hot topics, and as such am interested in AI itself."
-  },
-  {
-    "objectID": "about.html#overview",
-    "href": "about.html#overview",
-    "title": "About Me",
-    "section": "Overview",
-    "text": "Overview\n\nEducation\nCharles University, Prague, Czech Republic\nSociology | Sept 2021 - present\nTechnical University Berlin, Berlin, Germany\nBc. Architecture | Sept 2019 - June 2021\n\n\nExperience\nPAQ Research | Data Analyst | September 2022 - present\nInbaze | External: German Lecturer | October 2021 - present"
-  },
-  {
-    "objectID": "about.html#curriculum-vitae",
-    "href": "about.html#curriculum-vitae",
-    "title": "About Me",
-    "section": "Curriculum Vitae",
-    "text": "Curriculum Vitae\nHere you may find my entire Curriculum Vitae."
+    "text": "Hello, I am Matyáš Levínský a sociology student at the philosophical faculty of the Charles University in Prague. I am primarily interested in the precarization of work due to the Gig economy, and AI. I try to follow hot topics, and as such am interested in AI itself.\nSince 2022 I am working at PAQ Research as a Data Analyst. You may find my entire CV here.\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome",
     "section": "",
-    "text": "Hello, I am Matyas Levinsky a sociology student at the philosophical faculty of the Charles University. This page serves to show rendered content from my repositories and is currently a work in progress."
+    "text": "Ongoing restructuring\n\n\n\nThis site is being just created, things may move around or not be functional. Thanks for your patience.\nHello, I am Matyáš Levínský a sociology student at the philosophical faculty of the Charles University. This page serves to show rendered content from my repositories and is currently a work in progress."
   },
   {
-    "objectID": "index.html#uploaded-projects",
-    "href": "index.html#uploaded-projects",
+    "objectID": "index.html#what-did-i-upload",
+    "href": "index.html#what-did-i-upload",
     "title": "Welcome",
-    "section": "Uploaded projects",
-    "text": "Uploaded projects\n\nFebruary 2024\nCNN reporting analysis\nI investigated how CNN reported on the mass shooting that happened on the 21.12.2023 at my University."
+    "section": "What did I upload?",
+    "text": "What did I upload?\n\nFebruary 2024\nCNN reporting analysis\nI investigated how CNN reported on the mass shooting that happened on the 21.12.2023 at my University."
   }
 ]

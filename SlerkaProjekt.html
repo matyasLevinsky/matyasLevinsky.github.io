@@ -102,7 +102,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -126,23 +125,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About Me</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./cv.html" rel="" target="">
- <span class="menu-text">Curriculum Vitae</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Projects</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-me" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">About Me</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about-me">    
+        <li>
+    <a class="dropdown-item" href="./about.html" rel="" target="">
+ <span class="dropdown-text">About Me</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cv.html" rel="" target="">
+ <span class="dropdown-text">Curriculum Vitae</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Data Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data-projects">    
         <li>
     <a class="dropdown-item" href="./SlerkaProjekt.html" rel="" target="">
  <span class="dropdown-text">Analyzing the CNN coverage of the Prague University shooting</span></a>
   </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Research Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research-projects">    
+        <li class="dropdown-header">Work in progress</li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-guides" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Guides</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-guides">    
+        <li class="dropdown-header">Work in progress</li>
     </ul>
   </li>
 </ul>
@@ -168,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#expanding-on-that-analysis-latent-dirichlet-allocation" id="toc-expanding-on-that-analysis-latent-dirichlet-allocation" class="nav-link" data-scroll-target="#expanding-on-that-analysis-latent-dirichlet-allocation">Expanding on that analysis: Latent Dirichlet allocation</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/matyasLevinsky/matyaslevinsky.github.io/edit/main/_site/SlerkaProjekt.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/matyasLevinsky/matyaslevinsky.github.io/blob/main/_site/SlerkaProjekt.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -202,6 +224,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sensitive content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This Article, while only analyzing the reporting about a mass shooting will still contain some references about it. Read with caution if you are sensitive to that.</p>
+</div>
+</div>
 <p>Given that the University shooting that happened on the 21 December 2023 was unprecedented in Czech history, I wondered whether it would be reflected as such in american media that has grown increasingly desensitized to news of mass shootings.</p>
 <section id="resources-used" class="level4">
 <h4 class="anchored" data-anchor-id="resources-used">Resources used</h4>
