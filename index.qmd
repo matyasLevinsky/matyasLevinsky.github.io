@@ -17,3 +17,8 @@ Hello, I am [Matyáš Levínský](about.qmd) a sociology student at the philosop
 [**CNN reporting analysis**](SlerkaProjekt.qmd)
 
 I investigated how CNN reported on the mass shooting that happened on the 21.12.2023 at my University.
+
+
+#### Testing in March, do not upload
+
+With these options set, footnotes^[This is footnote testing.] and citations^[See Levinsky et. al, 2029] will (respectively) be automatically be placed in the margin of the document rather than the bottom of the page. As an example, when I cite Xie, Allaire, and Grolemund (2018), the citation bibliography entry itself will now appear in the margin. 

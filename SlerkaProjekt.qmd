@@ -14,7 +14,7 @@ Given that the University shooting that happened on the 21 December 2023 was unp
 
 #### Resources used
 
-I used the web-scraping tutorial provided by [renatatopinkova](https://renatatopinkova.github.io/) and the book [*Text Mining with R*](https://www.tidytextmining.com/) by [Julia Silge](https://juliasilge.com/) and [David Robinson](https://www.rstudio.com/authors/david-robinson/). ChatGPT-4 and its internal module R-Guru were used for troubleshooting.
+I used the web-scraping tutorial provided by [renatatopinkova](https://renatatopinkova.github.io/) and the book **Text Mining with R** [@robinsonWelcomeTextMining2024]. ChatGPT-4 and its internal module R-Guru were used for troubleshooting.
 
 ## Getting the data
 
@@ -29,7 +29,7 @@ library(tidyverse)
 library(jsonlite)
 library(janitor)
 library(here)
-source(here("helperCNNAnalysis.R"))
+source(here("_data/helperCNNAnalysis.R"))
 ```
 
 Now we can use them to read and parse the HTML of the CNN live-blogs. This may take some time so lets save it for later. If the code should be broken I have provided my own webscrape from 28.02.2024.
@@ -38,14 +38,14 @@ Now we can use them to read and parse the HTML of the CNN live-blogs. This may t
 #| eval: false
 htmlList <- readUrlList(urlList, silent = T)
 parsedDt <- parseUrlList(htmlList, silent = T)
-saveRDS(parsedDt, file = "parsedDt_WebscrapingCNN.rds")
+saveRDS(parsedDt, file = "_data/parsedDt_WebscrapingCNN.rds")
 parsedDt
 ```
 
 Alternative:
 
 ```{r}
-parsedDt <- readRDS(here("parsedDt_WebscrapingCNN.rds"))
+parsedDt <- readRDS(here("_data/parsedDt_WebscrapingCNN.rds"))
 parsedDt
 ```
 

@@ -1,11 +1,13 @@
 project:
   type: website
+  output-dir: _site
+  
+bibliography: _data/website.bib
 
 website:
   title: "Matyas Levinsky"
   back-to-top-navigation: true
   repo-url: https://github.com/matyasLevinsky/matyaslevinsky.github.io
-  repo-subdir: "_site"
   repo-actions: [edit, source]
   
   navbar:
@@ -35,7 +37,10 @@ format:
       light: cosmo
     toc: true
     toc-expand: true
+    toc-location: left
     df-print: paged
+    reference-location: margin
+    citation-location: margin
     fig-width: 9
     fig-height: 6
 

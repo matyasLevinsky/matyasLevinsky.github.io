@@ -31,7 +31,7 @@ format-links: [pdf]
 
 </div>
 
-![](GoodFotoMini.jpg){fig-align="right" width="220"}
+![](_data/GoodFotoMini.jpg){fig-align="right" width="220"}
 :::
 :::
 
