@@ -1,6 +1,7 @@
 project:
   type: website
-  output-dir: _site
+  resources: "_data"
+  output-dir: "_site"
   
 bibliography: _data/website.bib
 
