@@ -3,7 +3,7 @@ project:
   resources: "_data"
   output-dir: "_site"
   
-bibliography: _data/website.bib
+bibliography: data/website.bib
 
 website:
   title: "Matyas Levinsky"
@@ -38,6 +38,7 @@ format:
       light: cosmo
     toc: true
     toc-expand: true
+    toc-location: left
     df-print: paged
     reference-location: margin
     citation-location: margin

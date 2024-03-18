@@ -3,7 +3,7 @@ title: "About Me"
 
 about:
   template: solana
-  image: _data/GoodFoto.jpg
+  image: data/GoodFoto.jpg
   links:
     - icon: facebook
       text: facebook

@@ -29,7 +29,7 @@ library(tidyverse)
 library(jsonlite)
 library(janitor)
 library(here)
-source(here("_data/helperCNNAnalysis.R"))
+source(here("data/helperCNNAnalysis.R"))
 ```
 
 Now we can use them to read and parse the HTML of the CNN live-blogs. This may take some time so lets save it for later. If the code should be broken I have provided my own webscrape from 28.02.2024.
@@ -38,14 +38,14 @@ Now we can use them to read and parse the HTML of the CNN live-blogs. This may t
 #| eval: false
 htmlList <- readUrlList(urlList, silent = T)
 parsedDt <- parseUrlList(htmlList, silent = T)
-saveRDS(parsedDt, file = "_data/parsedDt_WebscrapingCNN.rds")
+saveRDS(parsedDt, file = "data/parsedDt_WebscrapingCNN.rds")
 parsedDt
 ```
 
 Alternative:
 
 ```{r}
-parsedDt <- readRDS(here("_data/parsedDt_WebscrapingCNN.rds"))
+parsedDt <- readRDS(here("data/parsedDt_WebscrapingCNN.rds"))
 parsedDt
 ```
 
