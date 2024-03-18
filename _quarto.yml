@@ -9,6 +9,8 @@ website:
   back-to-top-navigation: true
   repo-url: https://github.com/matyasLevinsky/matyaslevinsky.github.io
   repo-actions: [edit, source]
+  open-graph: true
+  google-analytics: "G-02CDV8B142"
   
   navbar:
     left:

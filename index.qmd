@@ -17,3 +17,4 @@ Hello, I am [Matyáš Levínský](about.qmd) a sociology student at the philosop
 [**CNN reporting analysis**](SlerkaProjekt.qmd)
 
 I investigated how CNN reported on the mass shooting that happened on the 21.12.2023 at my University.
+
