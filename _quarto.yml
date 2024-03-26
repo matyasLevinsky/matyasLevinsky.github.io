@@ -32,7 +32,8 @@ website:
           - SlerkaProjekt.qmd
       - text: "Research Projects"
         menu:
-          - text: "Work in progress"
+          - href: AIHypeCycles.qmd
+            text: "Analyzing AI Hype: Past and Present Booms"
       - text: "Guides"
         menu:
           - text: "Work in progress"
